@@ -7,6 +7,8 @@
         Whitewater Rafting Vacations | Dry Oar Boating | Home
     </title>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Lora');
+        @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
         h1,
         h2,
         h3,
@@ -14,6 +16,14 @@
         h5,
         h6 {
             color: #0b3084;
+            font-family: "Lora", "Georgia", serif;
+            font-weight: bold;
+            font-size: 45px;
+        }
+        
+        h2 {
+            line-height: 1;
+            margin: .125em 0em .125em 0em;
         }
         
         #content {
@@ -24,15 +34,18 @@
         
         .orangetext {
             color: #C45900;
+            margin: .25em;
         }
         
         nav {
             background-color: #C45900;
             color: #0b3084;
+            padding: 5px 0px 5px
         }
         
         a {
-            color: #0b3084
+            color: #0b3084;
+            font-size: 1.1em;
         }
         
         #section2 {
@@ -44,15 +57,35 @@
             width: 70%;
             margin: 0 auto;
         }
+        
+        p {
+            line-height: 1.5;
+            font-size: 2.5;
+        }
+        
+        body {
+            font-family: "Calibri", "Helvetica", sans-serif;
+        }
+        
+        section {
+            padding: 1em;
+        }
+        
+        #rush {
+            font-family: "Shadows Into Light";
+        }
+        
+        #section1,
+        #section2 {
+            width: 48%;
+        }
     </style>
 </head>
 
 <body>
     <div id="content">
         <section>
-            <h6>
-        <img src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="logo">
-        </h6>
+            <img src="http://brothert.net/dryoar/images/dryoarlogo.png" alt="logo">
         </section>
 
         <nav>
@@ -67,12 +100,10 @@
         </nav>
 
         <section>
-            <h6>
-        <img src="http://brothert.net/dryoar/images/river-wide2.JPG" alt="banner" height="40" width="940">
-        </h6>
+            <img src="http://brothert.net/dryoar/images/river-wide2.JPG" alt="banner" height="40" width="940">
         </section>
 
-        <section>
+        <section id="section1">
             <article class="leftcol">
                 <h2>We Run Rivers to Relax</h2>
 
@@ -86,13 +117,11 @@
         <section id="section2">
 
             <div class="leftcol">
-                <h6>
-            <img src="http://brothert.net/dryoar/images/raft-rapid.jpg" alt="raft-rapid.jpg" height="315" width="420">
-            </h6>
+                <img src="http://brothert.net/dryoar/images/raft-rapid.jpg" alt="raft-rapid.jpg" height="315" width="420">
             </div>
 
             <article class="rightcol">
-                <h2> We run Whitewater for the <strong>Rush</strong>!</h2>
+                <h2 class="orangetext"> We run Whitewater for the <strong><span id="rush">RUSH</span></strong>!</h2>
                 <p class="orangetext">That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that that tenseness that comes when you are looking down the tongue of a big string of waves makes you appreciate the calm beautiful water that always follows even more.</p>
             </article>
         </section>
@@ -105,9 +134,9 @@
         <footer>
             <p>&copy; 2016 Dry Oar||Jeffrey Bradley
             </p>
-            <a href="https://facebook.com" target="_blank"> <img src="facebook.png"></a>
-            <a href="https://twitter.com" target="_blank"><img src="twitter.png"></a>
-            <a href="https://youtube.com" target="_blank"><img src="youtube.png"></a>
+            <a href="https://facebook.com" target="_blank"> <img src="facebook.png" alt="facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="twitter"></a>
+            <a href="https://youtube.com" target="_blank"><img src="youtube.png" alt="youtube"></a>
         </footer>
     </div>
 </body>
