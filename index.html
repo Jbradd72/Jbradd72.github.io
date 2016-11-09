@@ -37,10 +37,50 @@
             margin: .25em;
         }
         
+        #logo {
+            float: left;
+            z-index: 3;
+            position: relative;
+            top: -24px;
+        }
+        
         nav {
             background-color: #C45900;
             color: #0b3084;
-            padding: 5px 0px 5px
+            width: 100%;
+            height: 30px;
+            margin: 0px;
+            padding: 0px;
+            position: static;
+        }
+        
+        #banner {
+            position: relative;
+            top: -114px;
+            margin-top: 10px;
+            margin-bottom: auto;
+            width: 100%;
+            z-index: 0;
+        }
+        
+        .rightcol,
+        .leftcol {
+            width: 48%;
+            flex: 1 0 15em;
+            margin: .5em;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        #section1,
+        #section2 {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: auto;
         }
         
         a {
@@ -55,7 +95,11 @@
         #bottom-row {
             text-align: center;
             width: 70%;
-            margin: 0 auto;
+            margin: 0 auto 2em auto;
+        }
+        
+        .full-width {
+            width: 100%;
         }
         
         p {
@@ -75,17 +119,26 @@
             font-family: "Shadows Into Light";
         }
         
-        #section1,
-        #section2 {
-            width: 48%;
-        }
-        
         li {
             display: inline;
         }
         
-        #logo {
+        footer {
+            display: flex;
+            flex-flow: row wrap;
+            max-height: 55px;
+            width: 100%;
+        }
+        
+        #copyright {
             float: left;
+        }
+        
+        .logo-link {
+            margin: 5px;
+            position: relative;
+            margin-left: auto;
+            margin-right: 0;
         }
     </style>
 </head>
@@ -112,7 +165,7 @@
             </ul>
         </nav>
 
-        <section>
+        <section id="banner" class="full-width">
             <img src="http://brothert.net/dryoar/images/river-wide2.JPG" alt="banner" height="250" width="940">
         </section>
 
@@ -145,11 +198,13 @@
             <p>We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and let us know which one best suits you. We're waiting to hear from you!</p>
         </article>
         <footer>
-            <p>&copy; 2016 Dry Oar||Jeffrey Bradley
+            <p id="copyright">&copy; 2016 Dry Oar||Jeffrey Bradley
             </p>
-            <a href="https://facebook.com" target="_blank"> <img src="facebook.png" alt="facebook"></a>
-            <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="twitter"></a>
-            <a href="https://youtube.com" target="_blank"><img src="youtube.png" alt="youtube"></a>
+            <div class="logo-link">
+                <a href="https://facebook.com" target="_blank"> <img src="facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="twitter"></a>
+                <a href="https://youtube.com" target="_blank"><img src="youtube.png" alt="youtube"></a>
+            </div>
         </footer>
     </div>
 </body>
